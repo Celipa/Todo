@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    min-height: 100vh;
+    margin: 3rem auto;
+    padding: 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(240,45,253,1) 100%); 
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.7);
+}
+.card{
+    
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.7);
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #34c759;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #30b54a;
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
+}
+li{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+li input[type="checkbox"]{
+    margin-right: 10px;
+}
+li input[type="checkbox"]::after{
+    color: #000;
+}
+li span{
+    margin-right: 10px;
+}
+li button{
+    background-image: url(./images/trashcan.png);
+    background-size: 40px 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 40px;
+    color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+li button:hover{
+    background-color: #d93025;
+}
+#errorMsg {
+    display: none;
+    color: red;
+    margin-top: 10px;
+  }
+  input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: solid rgb(80, 80, 80);
+  border-width: 1px;
+  background-color: #008b25;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #30b54a;
+}
