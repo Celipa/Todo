@@ -1,8 +1,13 @@
 {
-  "todos": [
+  "tasks": [
       {
           "id": "1",
           "title": "Städa kontoret",
+          "completed": false
+      },
+      {
+          "id": "2",
+          "title": "Gå ut med soporna",
           "completed": false
       },
       {
