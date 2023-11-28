@@ -15,54 +15,68 @@
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.7);
 }
-.card{
-    
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.7);
-    padding: 20px;
-}
+
 h1{
     text-align: center;
     margin-bottom: 20px;
 }
 input[type="text"]{
-    width: 70%;
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
     border: none;
-    margin-right: 10px;
+    margin-left: 22rem;
+    margin-right: 1rem;
 }
-button{
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #34c759;
+#addTaskBtn {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: solid rgb(80, 80, 80);
+    border-width: 1px;
+    background-color: #0b571f;
     color: #fff;
     cursor: pointer;
-}
-button:hover{
+    margin-left: 10px;
+  }
+  
+  #addTaskBtn:hover {
     background-color: #30b54a;
-}
+  }
 ul{
     list-style: none;
     margin-top: 20px;
 }
+
 li{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: aquamarine;
-    display: flex;
-    align-items: center;
+    padding: 16px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.7);
 }
+
+li:hover{
+    background-color: #c9c9c9;
+}
+li.clicked {
+    background-color:#c9c9c9 ; /* Replace with the color you want */
+  }
 li input[type="checkbox"]{
-    margin-right: 10px;
+    float: left;
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    
 }
-li input[type="checkbox"]::after{
-    color: #000;
+li input[type="checkbox"]:checked{
+    background-color: #000;
+    background-image: url();
 }
-li span{
-    margin-right: 10px;
-}
-btn{
+li button{
     background-image: url(/Todo-1/trashcan.png);
     background-size: 40px 40px;
     background-color: transparent;
@@ -74,26 +88,16 @@ btn{
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-left: auto;
+    float: right;
 }
-btn:hover{
+li button:hover{
     background-color: #c9c9c9;
 }
 
-checkbox{
-    background-color: aquamarine;
-}
 #errorMsg {
     display: none;
     color: red;
     margin-top: 10px;
-  }
-  input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 2px solid #ccc;
 }
 
 button {
@@ -101,12 +105,12 @@ button {
   border-radius: 15px;
   border: solid rgb(80, 80, 80);
   border-width: 1px;
-  background-color: #008b25;
+  background-color: #be0202;
   color: #fff;
   cursor: pointer;
   margin-left: 10px;
 }
 
 button:hover {
-  background-color: #30b54a;
+  background-color: #3d0200;
 }
