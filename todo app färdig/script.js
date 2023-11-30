@@ -1,4 +1,4 @@
-//importera variabler från html koden
+//create new variables for the elements in the html
 const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
@@ -7,14 +7,13 @@ const modal = document.getElementById("modal");
 const form = document.querySelector("form");
 const todoListContainer = document.querySelector(".todo-container");
 const deleteTodobtn = document.querySelector("#delete-btn");
-// const taskCheckbox = document.createElement("input");
 
 const todoListArray = []
 
 
 
 
-//GET - hämtar tasks från databasen
+//GET - gets all tasks from the database and waits for the fetch to complete
 const getTasks = async () => {
   const response = await fetch('https://js1-todo-api.vercel.app/api/todos?apikey=dcab7abf-b780-4f35-a791-cb0f8bd53feb')
   if(response.status !== 200) {
@@ -38,7 +37,7 @@ getTasks()
 
 
 
-//POST - lägger till tasks i databasen)
+//POST - adds a new task to the database and waits for the fetch to complete
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault()
@@ -139,20 +138,6 @@ const deleteTodo = async (id) => {
   getTasks();
 };
 
-// // ta bort tasks från databasen
-// const deleteTodo = async (id) => {
-//   const response = await fetch(`https://js1-todo-api.vercel.app/api/todos/${id}?apikey=dcab7abf-b780-4f35-a791-cb0f8bd53feb`, {
-//     method: 'DELETE',
-//   })
-//   if(response.status !== 200) {
-//     console.log('Något gick fel')
-//     return
-//   }
-//   const data = await response.json()
-//   console.log("Deleted id:", data)
-
-//   getTasks()
-// }
 
 //checks if the  is empty and shows an error message if it is
 function validateInput() {
@@ -174,19 +159,6 @@ document.querySelector(".close-modal-btn").addEventListener("click", () => {
 });
 
 
-// taskCheckbox.checked = task.completed;
-
-// // Apply styles based on the task status
-// if (task.completed) {
-//   li.style.textDecoration = "line-through";
-//   li.style.opacity = "0.5";
-// } else {
-//   li.style.textDecoration = "none";
-//   li.style.color = "black";
-//   li.style.opacity = "1";
-// }
-
-
 //updates the task status in the database
 
 taskList.addEventListener('click', async (event) => {
@@ -204,7 +176,7 @@ taskList.addEventListener('click', async (event) => {
         completed: status,
       })
     });
-      
+      //styling the task based on the status
 
     if (status) {
       event.target.parentNode.style.textDecoration = "line-through";
