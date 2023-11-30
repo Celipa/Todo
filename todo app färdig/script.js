@@ -143,7 +143,7 @@ const deleteTodo = async (id) => {
 function validateInput() {
   if (taskInput.value.trim() === "") {
     errorMsg.style.display = "block";
-    errorMsg.textContent = "Please enter a task";
+    errorMsg.textContent = "Please enter a task!";
     return false;
   }
   else{

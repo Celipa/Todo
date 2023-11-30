@@ -106,8 +106,8 @@ li button:hover{
 
 #errorMsg {
     display: none;
-    color: rgb(85, 30, 30);
-    background-color: #8d5454;
+    color: rgb(255, 255, 255);
+    background-color: #9b0707;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -127,7 +127,7 @@ li button:hover{
 .modal-content{
     margin: 10% 20%;
     text-align: center;
-    background-color: #ffffffdc;
+    background-color: #ffffffee;
     border-radius: 1rem;
     font-size: 1.5rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.7);
@@ -139,7 +139,7 @@ li button:hover{
     border-style: solid;
     font-size: 2rem;
     border-width: 4px;
-    border-color: #8d5454;
+    border-color: #8b3030;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 4rem;
