@@ -144,6 +144,7 @@ function validateInput() {
   if (taskInput.value.trim() === "") {
     errorMsg.style.display = "block";
     errorMsg.textContent = "Please enter a task!";
+
     return false;
   }
   else{
@@ -180,7 +181,8 @@ taskList.addEventListener('click', async (event) => {
 
     if (status) {
       event.target.parentNode.style.textDecoration = "line-through";
-      event.target.parentNode.style.opacity = "0.5";
+      event.target.parentNode.style.opacity = "0.3";
+      
     } else {
       event.target.parentNode.style.textDecoration = "none";
       event.target.parentNode.style.color = "black";

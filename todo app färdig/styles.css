@@ -82,6 +82,7 @@ li input[type="checkbox"]{
 }
 li input[type="checkbox"]:checked{
     background-color: #000;
+    z-index: 1000;
     background-image: url();
 }
 li button{
@@ -117,6 +118,7 @@ li button:hover{
 }
 #modal{
     display: none;
+    z-index: 1000;
     position: fixed;
     left: 0;
     top: 0;
@@ -127,7 +129,7 @@ li button:hover{
 .modal-content{
     margin: 10% 20%;
     text-align: center;
-    background-color: #ffffffee;
+    background-color: #ffffff;
     border-radius: 1rem;
     font-size: 1.5rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.7);
